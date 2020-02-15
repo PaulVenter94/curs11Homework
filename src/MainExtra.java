@@ -1,10 +1,11 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Scanner;
 
 public class MainExtra {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         File path = new File("grades.txt");
         Classroom classroom =new Classroom(StudentGrade.getStudents(path));
         System.out.println("Get grades for discipline");
@@ -19,5 +20,7 @@ public class MainExtra {
         System.out.println(classroom.getAverage("Physics"));
         System.out.println("Get worst grade");
         System.out.println(classroom.getWorstGrade("Mathematics"));
+        classroom.getLetters();
+
     }
 }

@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
@@ -84,5 +85,11 @@ public class Classroom {
 
     public List<StudentGrade> getClassroom() {
         return classroom;
+    }
+
+    public void getLetters() throws IOException {
+        for (StudentGrade studentGrade : classroom) {
+            LetterToStudents.letter(studentGrade);
+        }
     }
 }
