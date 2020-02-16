@@ -6,7 +6,7 @@ import java.io.IOException;
 public class MainExtra {
     public static void main(String[] args) throws IOException {
         File path = new File("grades.txt");
-        Classroom classroom =new Classroom(StudentGrade.getStudents(path));
+        Classroom classroom = new Classroom(StudentGrade.getStudents(path));
         System.out.println("Get grades for discipline");
         System.out.println(classroom.getGradesForDiscipline("Mathematics"));
         System.out.println("Get grades for student");

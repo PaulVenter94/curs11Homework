@@ -41,12 +41,10 @@ public class Classroom {
     }
 
     public StudentGrade getMaxGrade(String discipline) {
-        int max = 0;
         StudentGrade studentGrade = new StudentGrade(null, null, 0);
         for (StudentGrade elem : classroom) {
             if (elem.getDiscipline().equals(discipline)) {
-                if (elem.getGrade() > max) {
-                    max = elem.getGrade();
+                if (elem.getGrade() > studentGrade.getGrade()) {
                     studentGrade = elem;
                 }
             }
@@ -66,12 +64,10 @@ public class Classroom {
     }
 
     public StudentGrade getWorstGrade(String discipline) {
-        int min = Integer.MAX_VALUE;
-        StudentGrade studentGrade = new StudentGrade(null,null,0);
+        StudentGrade studentGrade = new StudentGrade(null, null, Integer.MAX_VALUE);
         for (StudentGrade elem : classroom) {
             if (elem.getDiscipline().equals(discipline)) {
-                if (elem.getGrade() < min) {
-                    min = elem.getGrade();
+                if (elem.getGrade() < studentGrade.getGrade()) {
                     studentGrade = elem;
                 }
             }
