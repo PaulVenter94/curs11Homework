@@ -1,3 +1,5 @@
+package ro.fasttrackit.curs11homework;
+
 import java.io.*;
 
 public abstract class LetterToStudents {

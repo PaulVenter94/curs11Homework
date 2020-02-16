@@ -1,3 +1,5 @@
+package ro.fasttrackit.curs11homework;
+
 import java.util.HashSet;
 import java.util.Set;
 

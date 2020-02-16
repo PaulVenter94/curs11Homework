@@ -1,3 +1,5 @@
+package ro.fasttrackit.curs11homework;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -6,12 +8,10 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class StudentGrade {
-    private String name;
-    private String discipline;
-    private int grade;
+    private final String name;
+    private final String discipline;
+    private final int grade;
 
-    public StudentGrade() {
-    }
 
     public StudentGrade(String name, String discipline, int grade) {
         this.name = name;
@@ -47,18 +47,6 @@ public class StudentGrade {
         return discipline;
     }
 
-    public void setDiscipline(String discipline) {
-        this.discipline = discipline;
-    }
-
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -80,7 +68,7 @@ public class StudentGrade {
                 "name='" + name + '\'' +
                 ", discipline='" + discipline + '\'' +
                 ", grade=" + grade +
-                '}'+"\n";
+                '}' + "\n";
     }
 }
 

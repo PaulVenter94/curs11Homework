@@ -1,8 +1,7 @@
+package ro.fasttrackit.curs11homework;
+
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.util.Scanner;
 
 public class MainExtra {
     public static void main(String[] args) throws IOException {

@@ -1,3 +1,5 @@
+package ro.fasttrackit.curs11homework;
+
 import java.util.*;
 
 public class Basket {
@@ -42,7 +44,7 @@ public class Basket {
 
     public int customCount() {
         int i;
-        for (i = 0;i<this.fruits.size();i++ );
+        for (i = 0; i < this.fruits.size(); i++) ;
         return i;
     }
 }

@@ -1,10 +1,8 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+package ro.fasttrackit.curs11homework;
+
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Classroom {
     private List<StudentGrade> classroom;
@@ -33,11 +31,9 @@ public class Classroom {
     }
 
     public StudentGrade getMaxGrade() {
-        int max = 0;
-        StudentGrade studentGrade = new StudentGrade();
+        StudentGrade studentGrade = new StudentGrade(null, null, 0);
         for (StudentGrade elem : classroom) {
-            if (elem.getGrade() > max) {
-                max = elem.getGrade();
+            if (elem.getGrade() > studentGrade.getGrade()) {
                 studentGrade = elem;
             }
         }
@@ -46,7 +42,7 @@ public class Classroom {
 
     public StudentGrade getMaxGrade(String discipline) {
         int max = 0;
-        StudentGrade studentGrade = new StudentGrade();
+        StudentGrade studentGrade = new StudentGrade(null, null, 0);
         for (StudentGrade elem : classroom) {
             if (elem.getDiscipline().equals(discipline)) {
                 if (elem.getGrade() > max) {
@@ -71,7 +67,7 @@ public class Classroom {
 
     public StudentGrade getWorstGrade(String discipline) {
         int min = Integer.MAX_VALUE;
-        StudentGrade studentGrade = new StudentGrade();
+        StudentGrade studentGrade = new StudentGrade(null,null,0);
         for (StudentGrade elem : classroom) {
             if (elem.getDiscipline().equals(discipline)) {
                 if (elem.getGrade() < min) {

@@ -1,3 +1,9 @@
+package ro.fasttrackit.curs11homework;
+
+import ro.fasttrackit.curs11homework.Basket;
+import ro.fasttrackit.curs11homework.Bouqet;
+import ro.fasttrackit.curs11homework.Company;
+
 public class Main {
     public static void main(String[] args) {
         Basket basket = new Basket();

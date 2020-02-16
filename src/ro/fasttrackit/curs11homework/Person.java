@@ -1,3 +1,5 @@
+package ro.fasttrackit.curs11homework;
+
 public class Person {
     private final String name;
     private final int age;
