@@ -20,6 +20,5 @@ public class MainExtra {
         System.out.println("Get worst grade");
         System.out.println(classroom.getWorstGrade("Mathematics"));
         classroom.getLetters();
-
     }
 }

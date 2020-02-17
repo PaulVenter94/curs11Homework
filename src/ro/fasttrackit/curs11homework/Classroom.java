@@ -8,7 +8,7 @@ public class Classroom {
     private List<StudentGrade> classroom;
 
     public Classroom(List<StudentGrade> classroom) {
-        this.classroom = classroom;
+        this.classroom = new ArrayList<>(classroom);
     }
 
     public List<StudentGrade> getGradesForDiscipline(String discipline) {
